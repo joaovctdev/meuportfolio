@@ -857,7 +857,7 @@ section {
   margin: auto;
   color: #fff;
   padding-bottom: 50px;
-  margin-bottom: 50px;
+  
 }
 a.btn.btn-primary{
   padding-top: 15px;
@@ -872,7 +872,7 @@ a.btn.btn-primary{
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  /* padding-bottom: 100px; */
+  padding-bottom: 130px;
 }
 
 .contact .info {
