@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+:root {
+    --cor-p1: #9a724e;
+} 
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 0px;
+    margin-top: -150px;
+}
+
+.contact form{
+    width: 600px;
+    text-align: center;
+}
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box .input-field{
+    width: 48.5%
+
+}
+
+.field .item{
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid var(--cor-p1);
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: black;
+    margin: 12px 0;
+}
+.field.error .item{
+    border-color: #d93025;
+}
+.field .error-txt{
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+.field.error .error-txt{
+    display: block;
+}
+
+.field .item::placeholder{
+    color: #6b4b2f;
+}
+
+form .textarea-field .item{
+    resize: none;
+}
+
+form .textarea-field .error-tx{
+    margin-top: -10px;
+}
+
+form button{
+    padding: 12px 32px;
+    background: var(--cor-p1);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 5px black;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .5s;
+}
+form button:hover{
+    box-shadow: none;
+}
