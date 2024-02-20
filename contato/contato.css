@@ -8,20 +8,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    min-height: 100vh;
+    background: rgb(255, 255, 255);
     
     
 }
-:root {
-    --cor-p1: #9a724e;
-} 
-#contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding-top: 0px;
-    margin-top: -150px;
+.contact h2{
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 .contact form{
@@ -42,7 +37,7 @@ form .input-box{
     width: 100%;
     padding: 18px;
     background: transparent;
-    border: 2px solid var(--cor-p1);
+    border: 2px solid #9a724e;
     outline: none;
     border-radius: 6px;
     font-size: 16px;
@@ -77,7 +72,7 @@ form .textarea-field .error-tx{
 
 form button{
     padding: 12px 32px;
-    background: var(--cor-p1);
+    background: #9a724e;
     border: none;
     outline: none;
     border-radius: 6px;

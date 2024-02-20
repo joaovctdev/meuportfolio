@@ -17,12 +17,12 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -41,21 +41,7 @@
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-center "  >
-          <h2>Pagina de Contato</h2>
-          <ol>
-            <li><a href="index.html">Inicio</a></li>
-            
-            <li>Pagina de Contato</li>
-          </ol>
-        </div>
-
-      </div>
-    </section><!-- End Breadcrumbs -->
-
+    
     
 
     <!-- ======= Contact Section ======= -->
@@ -64,65 +50,52 @@
 
         <div class="section-title">
           <h2>Entre em Contato</h2>
-          <p>Preencha os espaços vazios abaixo para entrar em contato comigo, a sua mensagem vai direto para o meu email.</p>
+            <p>Preencha os espaços vazios abaixo para entrar em contato. <br> <strong>A sua mensagem vai direto para o meu email.</strong></p>
         </div>
         <form action="#">
             <div class="input-box">
               <div class="input-field field">
                 <input type="text" placeholder="Nome Completo/Empresa" id="name" class="item" autocomplete="off">
-                <div class="error-txt email">Nome nao pode estar vazio</div>
+                  <div class="error-txt">Nome nao pode estar vazio</div>
               </div>
               <div class="input-field field">
                 <input type="text" placeholder="Email" id="email" class="item" autocomplete="off">
-                <div class="error-txt">Email nao pode estar vazio</div>
+                  <div class="error-txt email">Email nao pode estar vazio</div>
               </div>
             </div>
             <div class="input-box">
               <div class="input-field field">
                 <input type="text" placeholder="Celular" id="phone" class="item" autocomplete="off">
-                <div class="error-txt">Celular pode estar vazio</div>
+                  <div class="error-txt">Celular não pode estar vazio</div>
               </div>
               <div class="input-field field">
                 <input type="text" placeholder="Assunto" id="subject" class="item" autocomplete="off">
-                <div class="error-txt">Assunto pode estar vazio</div>
+                  <div class="error-txt">Assunto não pode estar vazio</div>
               </div>
             </div>
-            
-            
-
+           
             <div class="textarea-field field">
               <textarea name="" id="message" cols="30" rows="10" placeholder="Mensagem" class="item" autocomplete="off"></textarea>
               <div class="error-txt">Mensagem nao pode estar vazia</div>
             </div>
 
-            <button type="submit">Enviar Mensagem</button>
+              <button type="submit">Enviar Mensagem</button>
         </form>
 
          
     </section><!-- End Contact Section -->
-
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="contato/contact.js"></script>
+    
+    
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
   </main><!-- End #main -->
   
   
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   
-  <script src="https://smtpjs.com/v3/smtp.js">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="/contato/contact.js"></script>
-  
-  
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
 
 </body>
 

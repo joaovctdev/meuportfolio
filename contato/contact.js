@@ -3,7 +3,7 @@ const fullName = document.getElementById("name");
 const email = document.getElementById("email");
 const num = document.getElementById("phone");
 const subject = document.getElementById("subject");
-const message = document.getElementById("message");
+const mess = document.getElementById("message");
 
 function sendEmail() {
     const bodyMessage = `Nome Completo/Empresa: ${fullName.value}<br> Email: ${email.value}<br> Numéro ${phone.value}<br> Assunto: ${subject.value}<br>  Mensagem: ${mess.value}`;

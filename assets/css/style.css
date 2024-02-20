@@ -348,7 +348,8 @@ section {
   margin-bottom: 0;
 }
 .contact .section-title h2::after{
-  background: white ;
+  background: var(--cor-p1) ;
+  width: 250px;
 }
 .contact .section-title h2{
     margin-bottom: 5px;
@@ -877,18 +878,8 @@ a.btn.btn-primary{
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact {
-  padding-bottom: 130px;
-}
-
-.contact .info {
-  padding: 30px;
-  background: rgba(255, 255, 255, 0.596);
-  width: 100%;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-}
-
-.contact .info i {
+;
+/* .contact .info i {
   font-size: 20px;
   color: var(--cor-p1);
   float: left;
@@ -900,9 +891,9 @@ a.btn.btn-primary{
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
-}
+} */
 
-.contact .info h4 {
+/* .contact .info h4 {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
@@ -923,9 +914,9 @@ a.btn.btn-primary{
 
 .contact .info .social-links {
   padding-left: 60px;
-}
+} */
 
-.contact .info .social-links a {
+/* .contact .info .social-links a {
   font-size: 18px;
   display: inline-block;
   background: #333;
@@ -938,9 +929,9 @@ a.btn.btn-primary{
   height: 36px;
   transition: 0.3s;
   margin-right: 10px;
-}
+} */
 
-.contact .info .social-links a:hover {
+/* .contact .info .social-links a:hover {
   background: var(--cor-p1);
   color: black;
 }
@@ -952,17 +943,17 @@ a.btn.btn-primary{
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 20px 0px;
-  background: white;
-  
-}
 
+
+#breadcrumbs{
+  align-items: center;
+  padding-left: 0;
+}
 .breadcrumbs h2 {
   font-size: 26px;
   font-weight: 300;
