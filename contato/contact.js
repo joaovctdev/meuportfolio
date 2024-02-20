@@ -6,7 +6,7 @@ const subject = document.getElementById("subject");
 const mess = document.getElementById("message");
 
 function sendEmail() {
-    const bodyMessage = `Nome Completo/Empresa: ${fullName.value}<br> Email: ${email.value}<br> Numéro ${phone.value}<br> Assunto: ${subject.value}<br>  Mensagem: ${mess.value}`;
+    const bodyMessage = `Nome Completo/Empresa: ${fullName.value}<br> Email: ${email.value}<br> Número ${phone.value}<br> Assunto: ${subject.value}<br>  Mensagem: ${mess.value}`;
 
     Email.send({
         SecureToken: "4eb27629-bdfd-4f67-883d-18b1c324aa83",
@@ -41,7 +41,7 @@ function checkInputs() {
         }
 
         items[1].addEventListener("keyup", () => {
-          checkEmail();
+            checkEmail();
         });
 
         item.addEventListener("keyup", () => {
