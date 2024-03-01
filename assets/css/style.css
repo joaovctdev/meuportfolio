@@ -884,7 +884,7 @@ a.btn.btn-primary{
   padding-top: -10px;
   margin-top: -10px;
   margin-left: auto;
-
+  
   align-items: center;
   justify-content: center;
 }  
@@ -896,15 +896,17 @@ a.btn.btn-primary{
 }
 
 .contact form{
-  width: 600px;
+  max-width: 750px;
   text-align: center;
 }
 form .input-box{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .input-box .input-field{
+  flex: 1 0 calc(50% - 10px);
   width: 48.5%
 
 }
