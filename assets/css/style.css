@@ -314,10 +314,11 @@ h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
+  background-color: white;
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: white;
 }
 
 .section-title {
