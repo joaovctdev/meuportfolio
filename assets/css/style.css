@@ -16,6 +16,11 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -684,10 +689,33 @@ section {
   padding-top: 40px;
 }
 
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
+.bi-hand-index-thumb {
+  font-size: 32px;
+}
+#portfolio-details a{
+  color: #000000;
+  font-weight: lighter;
 }
 
+#portfolio-details a:hover{
+  color: #684c33;
+  border-bottom: 1px solid #463424;
+}
+
+#portfolio-details a svg {
+  width: 32px; /* Define o tamanho do ícone como o dobro do tamanho original */
+  height: 32px; /* Define o tamanho do ícone como o dobro do tamanho original */
+  margin-right: 3px; /* Adiciona uma margem de 3 pixels à direita do ícone */
+}
+
+.portfolio-details .portfolio-details-slider img {
+  width: 100%;
+  height: auto;
+}
+
+.text-start{
+  text-align: left;
+}
 .portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
@@ -708,6 +736,7 @@ section {
 .portfolio-details .portfolio-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+  margin-bottom: 50px;
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -1037,6 +1066,25 @@ form button:hover{
   content: "/";
 }
 
+@media (max-width: 200px) {
+  /* Estilos específicos para telas com largura máxima de 200px */
+  .profile img {
+    width: 80px; /* Reduz o tamanho da imagem do perfil */
+    height: 80px;
+  }
+
+  .nav-menu {
+    width: 100%; /* Torna o menu de navegação ocupando 100% da largura */
+  }
+
+  .nav-menu ul li {
+    display: block; /* Mostra os itens do menu verticalmente */
+  }
+
+  /* Outros ajustes de layout conforme necessário */
+}
+
+
 @media (max-width: 768px) {
   .breadcrumbs .d-flex {
     display: block !important;
@@ -1051,20 +1099,26 @@ form button:hover{
   }
 }
 
+.imgcalc{
+  height: 45px;
+  width: 45px;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  padding: 13px;
+  padding: 20px 0px;
   color: #f4f6fd;
   font-size: 14px;
   left: 0;
-  position: fixed;
+  position: relative;
   bottom: 0; 
   bottom: 0;
-  width: 300px;
+  width: 100%;
   z-index: 9999;
   background: #040b14;
+  margin-top: auto;
+  text-align: center;
 }
 
 #footer .copyright {
