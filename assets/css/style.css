@@ -24,8 +24,20 @@ body {
 }
 
 a {
-  color: #554d2a;
+  font-weight: bold;
+  color: black;
   text-decoration: none;
+}
+
+.detailsproject{
+  font-weight: bolder;
+  color: #000000;
+  text-decoration: none;
+}
+.detailsproject:hover{
+  color: white;
+  background-color: var(--cor-p1);
+  border-radius: 2px;
 }
 
 a:hover {
@@ -658,7 +670,7 @@ section {
   text-align: center;
   background: var(--cor-p1);
   transition: 0.3s;
-  width: 50%;
+  width: 100%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
@@ -681,6 +693,8 @@ section {
   opacity: 1;
   bottom: 0;
 }
+
+
 
 /*--------------------------------------------------------------
 # Portfolio Details
@@ -759,6 +773,24 @@ section {
 
 .portfolio-details .portfolio-description {
   padding-top: 30px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icons i {
+  margin: 5px;
+}
+
+@media (max-width: 450px) {
+  .icons {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .portfolio-details .portfolio-description h2 {
