@@ -790,7 +790,7 @@ section {
   margin: 5px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 520px) {
   .icons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
