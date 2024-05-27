@@ -104,6 +104,29 @@ h6 {
   background: #000000;
   overflow-y: auto;
 }
+#profilepic{
+  max-width: 78%;
+}
+@media (max-width: 991px){
+  #profilepic{
+    max-width: 50%;
+    align-items: center;
+    padding-left: -10px;
+  }
+}
+@media (max-width: 767px){
+  #profilepic{
+    max-width: 60%;
+    margin-left: 114px;
+  }
+}
+@media (max-width: 549px){
+  #profilepic{
+    max-width: 60%;
+    margin-left: 1px;
+  }
+}
+
 
 #header .profile img {
   margin: 15px auto;
