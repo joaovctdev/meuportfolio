@@ -104,29 +104,62 @@ h6 {
   background: #000000;
   overflow-y: auto;
 }
-#profilepic{
+#profilepic {
   max-width: 78%;
 }
-@media (max-width: 991px){
-  #profilepic{
-    max-width: 50%;
+@media (max-width: 991px) {
+  #profilepic {
+    max-width: 315px;
     align-items: center;
     padding-left: -10px;
   }
 }
-@media (max-width: 767px){
-  #profilepic{
-    max-width: 60%;
+@media (max-width: 767px) {
+  #profilepic {
+    max-width: 250px;
     margin-left: 114px;
   }
 }
-@media (max-width: 549px){
-  #profilepic{
-    max-width: 60%;
+@media (max-width: 549px) {
+  #profilepic {
+    max-width: 220px;
     margin-left: 1px;
   }
 }
 
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.icon-item {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hover-text {
+  visibility: hidden;
+  width: 100px;
+  background-color: var(--cor-p1);
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Posição do texto */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.icon-item:hover .hover-text {
+  visibility: visible;
+  opacity: 1;
+}
 
 #header .profile img {
   margin: 15px auto;
